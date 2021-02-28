@@ -11,7 +11,6 @@ export class AlertController {
     @HttpCode(200)
     sendAlertToAll(@Body() dto: AlertDto){
         this.alertGateway.sendToAll(dto.message);
-
         return dto
     }
 }
